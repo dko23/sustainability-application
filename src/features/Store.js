@@ -19,7 +19,8 @@ import { combineReducers } from 'redux';//combineReducers function to group up a
 //     reducer: persistedReducer
 // })//// enable the APIprrovider get access to the API to share in the whole app
 
-
+import { configureStore } from "@reduxjs/toolkit";
+import postReducer from "./postSlice"
 export default configureStore({
     reducer: {
         post: postReducer

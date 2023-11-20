@@ -13,7 +13,7 @@ const initialState = [
     reducers: {
       actionAdded: (state, action) => {
         state.push(action.payload)
-      }, /// so the action defined here is the postAdded and the aciton.payload is the new data that we want to push in this case. So, in summary, the usage of action.payload depends on the specific requirements of each action and reducer. If an action does not need any additional data, you can omit the action.payload and simply dispatch the action without passing any arguments.
+      }, /// so the action defined here is the actionAdded and the aciton.payload is the new data that we want to push in this case. So, in summary, the usage of action.payload depends on the specific requirements of each action and reducer. If an action does not need any additional data, you can omit the action.payload and simply dispatch the action without passing any arguments.
 
 
       editAction: (state, action) => {

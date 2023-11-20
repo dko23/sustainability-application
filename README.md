@@ -1,4 +1,59 @@
-# Getting Started with Create React App
+# Utility Bill Management App
+
+## Project Overview
+
+The Utility Bill Management App is a full-stack web application built with the MERN (MongoDB, Express.js, React, Node.js) stack. It allows users to manage and record their utility bills, providing insights into their water and electricity expenses over time.
+
+## Features
+
+- Utilizes the Recharts library for interactive graphs displaying utility expenses.
+- Calculates and displays savings data for water and electricity.
+
+## Deployment
+
+The application is deployed on Vercel. To run the app locally, follow the steps below:
+
+### Start APP
+
+-cd to backend folder
+-nodemon server.js
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -67,4 +122,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 ### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify) -->
