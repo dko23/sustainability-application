@@ -101,7 +101,6 @@ app.listen(5000, () => {
 });
 
 
-
  ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //  const { ObjectId } = require('mongodb');
 //  const { MongoClient } = require('mongodb');
@@ -173,3 +172,98 @@ app.listen(5000, () => {
 //       });
 //   });
   
+
+// // api/server.js
+// const express = require('express');
+// const cors = require('cors');
+// const receipt = require('./bill');
+// const mongoose = require('mongoose');
+
+// const app = express();
+
+// app.use(express.json());
+// app.use(cors());
+
+// const connectionURL = 'mongodb+srv://danielowusu1759:ct2203@code-cluster.zdowcz5.mongodb.net/utility?retryWrites=true&w=majority';
+
+// mongoose.connect(connectionURL, {
+//   useNewUrlParser: true,
+//   useUnifiedTopology: true
+// }).then(() => {
+//   console.log('Connected to MongoDB Atlas');
+// }).catch((error) => {
+//   console.error('Error connecting to MongoDB Atlas:', error);
+// });
+
+// // Define your routes here
+
+// // Route to create a new bill
+// app.post('/api/postbill', async (req, res) => {
+//   try {
+//     const { month, electricity, water, action, actionDate } = req.body;
+//     const bill = await receipt.create({
+//       month,
+//       electricity,
+//       water,
+//       action,
+//       actionDate,
+//     });
+
+//     // Log the entire bill object, including the generated _id
+//     console.log('Newly created bill:', bill);
+
+//     res.json(bill); // Return the newly created bill in the response
+//   } catch (error) {
+//     console.error('Error creating bill', error);
+//     res.status(500).json({ error: 'Internal server error' });
+//   }
+// });
+
+// // Route to get all bills
+// app.get('/api/getbill', async (req, res) => {
+//   try {
+//     const allBills = await receipt.find();
+//     res.json(allBills);
+//     console.log('Got bill:', allBills);
+//   } catch (error) {
+//     console.error('Error fetching bills', error);
+//     res.status(500).json({ error: 'Internal server error' });
+//   }
+// });
+
+// // Route to update a bill by ID
+// app.put('/api/editbill/:id', async (req, res) => {
+//   try {
+//     const { id } = req.params;
+//     const { month, water, electricity, actionDate } = req.body;
+//     const updatedBill = await receipt.findByIdAndUpdate(id, { month, actionDate, water, electricity });
+//     res.json(updatedBill);
+//   } catch (error) {
+//     console.error('Error updating bill', error);
+//     res.status(500).json({ error: 'Internal server error' });
+//   }
+// });
+
+// // Route to delete a bill by ID
+// app.delete('/api/delete/:id', async (req, res) => {
+//   try {
+//     const { id } = req.params;
+//     const deletedBill = await receipt.findByIdAndDelete(id);
+//     res.json(deletedBill);
+//   } catch (error) {
+//     console.error('Error deleting bill', error);
+//     res.status(500).json({ error: 'Internal server error' });
+//   }
+// });
+
+// // Example serverless function
+// module.exports = async (req, res) => {
+//   try {
+//     const allBills = await receipt.find();
+//     res.json(allBills);
+//     console.log('Got bill:', allBills);
+//   } catch (error) {
+//     console.error('Error fetching bills', error);
+//     res.status(500).json({ error: 'Internal server error' });
+//   }
+// };
