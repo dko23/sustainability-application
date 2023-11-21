@@ -8,7 +8,7 @@ function Footer() {
           <div className="col-md-4 ">
             <h6>About US</h6>
             <ul className='foot'>
-              <li>About Go green</li>
+              <li>About Sustania</li>
             </ul>
           </div>
           <div className="col-md-4">

@@ -18,6 +18,9 @@ function Navbar() {
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
            <Link to="/"><a class="nav-link active" aria-current="page">Home</a></Link>  
+              </li>
+              <li class="nav-item">
+          <Link to='./AboutUs'><a class="nav-link" href="aboutus">Why Sustania</a></Link> 
           </li>
           <li class="nav-item">
           <Link to='./Dash'><a class="nav-link" href="#">Dash Board</a></Link> 

@@ -3,23 +3,21 @@ import meter from '../images/meter.jpg'
 import together from '../images/together.jpg'
 import { motion } from "framer-motion"
 
+
 function Home() {
   return (
       <motion.div  
       initial={{ opacity: 0, x: '-100vh' }}
       animate={{ opacity: 1, x: 0 }}>
-             <div className="container">
-          
-          <motion.div class="jumbotron jumbotron-fluid">
-    <div class="container">
-      <h1 class="display-4">#For A Greener Future</h1>
-      
-    </div>
+                <motion.div class="jumbotron jumbotron-fluid">
+      <h1 class="display-4">For A Greener Future</h1>
+    
   </motion.div>
+             <div className="container">
             <div className="row energy-meter ">
               <div className="col-md-6 ">
             <h1 className="font-weight-bold">Energy-smart decisions for a sustainable lifestyle</h1>
-            <p className='energy-management'>Embrace the power of data-driven energy management. By analyzing your energy patterns, the Smart Meter tailors personalized energy-saving tips, empowering you to take control of your consumption like never before.</p>
+            <p className='energy-management'>Embrace the power of data-driven energy management. By analyzing your energy patterns, Sustania tailors personalized energy-saving tips, empowering you to take control of your consumption like never before.</p>
               </div>
   
               <motion.div animate={{ x: 100 }}
