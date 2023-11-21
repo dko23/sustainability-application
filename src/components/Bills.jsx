@@ -5,7 +5,7 @@ import { useSelector } from 'react-redux';
 function Bills() {
 
 
-    const posts = useSelector((state) => state.post); // Read and subscribe to the state value from the store
+  const posts = useSelector((state) => state.post); // Read and subscribe to the state value from the store
    
     
   function calculateMonthlySavings(posts) {

@@ -1,5 +1,5 @@
-import { configureStore } from "@reduxjs/toolkit";
-import postReducer from "./postSlice"
+// import { configureStore } from "@reduxjs/toolkit";
+// import postReducer from "./postSlice"
 import storage from 'redux-persist/lib/storage';//it is an object represents the storage medium where the state will be persisted. In this case, it uses the browser's local storage.
 import { persistReducer, persistStore } from 'redux-persist'; 
 import { combineReducers } from 'redux';//combineReducers function to group up all the reducers into one so that we can pass it to the redux-persist.
