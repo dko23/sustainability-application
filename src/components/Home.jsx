@@ -39,12 +39,20 @@ function Home() {
                 <h1 className="font-weight-bold">Shaping the world's energy future responsibly.</h1>
                 <p className='energy-management'>Experience the joy of making conscious choices that leave a lasting imprint on the world. Together, we can reduce waste, conserve resources, and protect our natural habitats for generations to come. </p>
               </div>
-            </div>
+        </div>
+        
+
+
+
+
+
+        
           </div>   
     </motion.div>
   )
 }
 
 export default Home
+
 
 

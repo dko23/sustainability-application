@@ -74,6 +74,8 @@
 
 .main-footer{
   margin-top: 50px;
+  background-color:#E5F2EF;
+
 }
 .navbar-nav a {
   text-decoration: none;
@@ -93,7 +95,16 @@
 
 .foot{
   list-style-type: none;
+  font-size: larger;
 }
+.nav-item{
+font-size: larger;
+}
+.Footer h6 {
+  font-size: larger;
+}
+
+
 
 
 .jumbotron{
@@ -143,9 +154,14 @@
 }
 .energy-management{
   text-align: left;
-  margin-top: 50px;
- 
+  font-size: 18px;
+  word-spacing: 5px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  line-height: 2.0;
+
 }
+ 
 .dash{
  
   display: flex;
@@ -210,8 +226,36 @@ background-color: blue;
 
 .col-md-6 {
   border-radius: 15px;
+
 }
 
 .testimonial-student{
   margin-bottom: 200px;
+}
+
+.student{
+
+
+}
+.track-bill{
+ 
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  border-radius: 30px;
+}
+
+.money{
+box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+border-radius: 30px;
+}
+
+.mission{
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  border-radius: 30px;
+  }
+.mission-statement{
+   margin-bottom: 300px;
+}
+
+.usage{
+  margin-bottom: 300px;
 }

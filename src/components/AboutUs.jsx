@@ -2,7 +2,10 @@ import React from 'react'
 import { motion } from "framer-motion"
 import meter from '../images/meter.jpg'
 import student from '../images/university-student.jpg'
-import mission from '../images/save-together.jpg'
+import mission from '../images/black-woman-tech.jpg'
+import money from '../images/lawyer-payment-methods.png'
+import trackbill from '../images/track-bill.jpg'
+
 
 function AboutUs() {
     return (
@@ -24,25 +27,49 @@ function AboutUs() {
 </blockquote>
                     </div>
               <motion.div animate={{ x: 100 }}
-  transition={{ ease: "easeOut", duration: 2 }} className="col-md-6 "  >
-                <img src={student} alt="Picture 1" />
+  transition={{ ease: "easeOut", duration: 2 }} className="col-md-6 student "  >
+                <img src={student} alt="Picture 1" className="img-fluid pic" />
               </motion.div>
             </div>
-            <div className="row energy-meter">
+            <div className="row mission-statement">
 <motion.div className="col-md-6">
-  <img src={mission} className="img-fluid pic" alt="Testimonial" />
+  <img src={mission} className="img-fluid pic mission" alt="Testimonial" />
 </motion.div>
 
 <div className="col-md-6">
 <h1 className="font-weight-bold">Our Mission </h1>
             <h5 className='energy-management'>At Sustania our mission is to empower individuals and households to take control of their utility expenses through innovative and user-friendly solutions. We are committed to providing a seamless, data-driven experience that not only simplifies the management of utility bills but also fosters a culture of sustainable and efficient energy usage.</h5>
 </div>
+          </div>
+          <div className="row usage">
+<motion.div className="col-md-6">
+              <h1 className="font-weight-bold">Simple to use </h1>
+            <h5 className='energy-management '>Whether you've paid in person, via bank transfer, or through supported apps like ExpressPay, simply input the payment amount from your receipt into the dashboard.</h5>
+</motion.div>
+
+<div className="col-md-6">
+<img src={money} className="img-fluid pic money" alt="Testimonial" />
+</div>
+          </div>
+          <div className="row energy-meter">
+<motion.div className="col-md-6">
+  <img src={trackbill} className="img-fluid pic track-bill" alt="Testimonial" />
+</motion.div>
+
+<div className="col-md-6">
+<h1 className="font-weight-bold" >Stay on top of your utility budget, monitor expenditures, and optimize your costs efficiently. </h1>
+
+</div>
 </div>
         </div>
+
+        
         </motion.div>
     )
 }
 
 export default AboutUs
+
+
 
 

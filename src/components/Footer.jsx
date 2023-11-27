@@ -6,21 +6,22 @@ function Footer() {
       <div className="container-fluid main-footer">
         <div className="row footer">
           <div className="col-md-4 ">
-            <h6>About US</h6>
             <ul className='foot'>
+            <li>About Us</li>
               <li>About Sustania</li>
             </ul>
           </div>
           <div className="col-md-4">
-            <h6>Policies</h6>
+            
             <ul className='foot'>
+              <li>Policies</li>
               <li>Privacy Policy</li>
               <li>Terms of Use</li>
             </ul>
           </div>
           <div className="col-md-4">
-            <h6>Customer Service</h6>
             <ul className='foot'>
+              <li>Customer Service</li>
               <li>FAQs</li>
               <li>ALERTS</li>
               <li>COVID-19 Measures</li>
