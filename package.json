@@ -6,6 +6,11 @@
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
     "@fontsource/roboto": "^5.0.5",
+    "@fortawesome/fontawesome-svg-core": "^6.4.2",
+    "@fortawesome/free-brands-svg-icons": "^6.4.2",
+    "@fortawesome/free-regular-svg-icons": "^6.4.2",
+    "@fortawesome/free-solid-svg-icons": "^6.4.2",
+    "@fortawesome/react-fontawesome": "^0.2.0",
     "@mui/icons-material": "^5.14.0",
     "@mui/material": "^5.13.7",
     "@reduxjs/toolkit": "^1.9.5",
@@ -13,8 +18,11 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.4.0",
+    "babel-plugin-macros": "^3.1.0",
     "bootstrap": "^5.3.0",
     "framer-motion": "^10.13.1",
+    "i": "^0.3.7",
+    "npm": "^10.2.4",
     "react": "^18.2.0",
     "react-bootstrap": "^2.8.0",
     "react-dom": "^18.2.0",
@@ -31,7 +39,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "dev": "nodemon server.js" 
+    "dev": "nodemon server.js"
   },
   "eslintConfig": {
     "extends": [

@@ -12,10 +12,10 @@ function Dash() {
 <div className='row '>
 <div className="col-md-6 ">
     <WaterChart />
-    <PostGreen/>
   </div>
-  <div className="col-md-6 dash">
-  <ActionList />
+          <div className="col-md-6">
+            <PostGreen />
+            <ActionList />
   </div>
     </div>
 </motion.div>  
@@ -24,3 +24,5 @@ function Dash() {
 }
 export default Dash
 
+{/* <h4>Receipt Box</h4>
+ */}

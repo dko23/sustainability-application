@@ -74,8 +74,9 @@
 
 .main-footer{
   margin-top: 50px;
-  background-color:#E5F2EF;
-
+  background-color:rgb(249, 249, 249);
+  display: flex;
+ 
 }
 .navbar-nav a {
   text-decoration: none;
@@ -142,30 +143,25 @@ font-size: larger;
   color:#013B30;
   margin-right: 50px;
   font-family: Arial, Helvetica, sans-serif,sans-serif;
- 
-
-
 }
 
 .energy-meter{
   text-align: left;
   margin-bottom: 100px;
- 
 }
+
 .energy-management{
   text-align: left;
-  font-size: 18px;
   word-spacing: 5px;
   margin-top: 10px;
   margin-bottom: 15px;
   line-height: 2.0;
-
 }
  
 .dash{
  
-  display: flex;
-  justify-content: center;
+  /* display: flex;
+  justify-content: center; */
   border-radius: 30px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   background-color: #F0F1F2;
@@ -176,6 +172,12 @@ font-size: larger;
   width: 70px;
   border-radius: 50px;
 }
+.company-logo{
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+}
+
 
 .box{
   display: flex;
@@ -186,19 +188,15 @@ font-size: larger;
 /* Add this CSS to your stylesheet */
 .navbar-nav .nav-link:hover {
   color: green; /* Change this to the desired hover color */
-
 }
 
 .bill-list{
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   border: 2px solid #DBD3D8;
-background-color: blue;
-
 }
 
 .chart{
-  border: 2px solid black;
   margin-bottom: 50px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   border: 2px solid #DBD3D8;
@@ -207,17 +205,16 @@ background-color: blue;
 
 .intro{
   margin-bottom: 40px;
-  color:#013B30;
- 
+  color:#013B30; 
 }
+
 
 .intro-sustania{
   background-color:#E5F2EF;
   height: 300px;
   margin-bottom: 50px;
-
-
 }
+
 .intro-description {
   width: 50%;
   margin: 0 auto; /* Center the element horizontally */
@@ -226,7 +223,6 @@ background-color: blue;
 
 .col-md-6 {
   border-radius: 15px;
-
 }
 
 .testimonial-student{
@@ -234,11 +230,11 @@ background-color: blue;
 }
 
 .student{
-
-
+  border-top-left-radius: 200px;
+  border-bottom-right-radius: 200px;
 }
+
 .track-bill{
- 
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
   border-radius: 30px;
 }
@@ -250,12 +246,60 @@ border-radius: 30px;
 
 .mission{
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-  border-radius: 30px;
+  border-top-right-radius: 200px;
+  border-bottom-left-radius: 200px;
   }
 .mission-statement{
-   margin-bottom: 300px;
+   margin-bottom: 200px;
 }
 
 .usage{
   margin-bottom: 300px;
+}
+
+.energy-stuff{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 200px;
+}
+.sustania-logos{
+  margin-left: 200px;
+  align-content: center;
+}
+.sustania-foot{
+  margin-left: 200px;
+ align-content: center;
+}
+/* .brands{
+  border: 2px solid red;
+  display: flex;
+  justify-content: space-between;
+} */
+
+.big-companies{
+  height: 300px;
+}
+.edf-logo{
+  height: 100px;
+  width: 80px;
+}
+.water-logo{
+  height: 100px;
+  width: 100px;
+}
+.british-logo{
+  height: 70px;
+  width: 100px;
+}
+.view {
+  background-image: url('../src/images/blob.svg');
+  background-size: cover;
+  background-position: top left;
+}
+
+.guide{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

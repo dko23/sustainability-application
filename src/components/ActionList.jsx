@@ -15,13 +15,13 @@ import Divider from '@mui/material/Divider';
 import axios from 'axios';
 import { useEffect } from 'react';
 import { motion } from "framer-motion"
+import Drawer from '@mui/material/Drawer';
 
 
 
 function ActionList() {
   const posts = useSelector((state) => state.post); // Read and subscribe to the state value from the store
   console.log(useSelector((state) => state.post))
-
 
   const style = {
     position: 'absolute',
@@ -33,7 +33,7 @@ function ActionList() {
     border: '2px solid #000',
     boxShadow: 24,
     p: 4,
-  };//////////////////////////////////////////////////////////////////
+  };
 
   const style1 = {
     width: '100%',
@@ -51,7 +51,6 @@ function ActionList() {
   //       );
   //   };
 
-
     const removeAction = async (id) => {
       try {
         await axios.delete(`http://localhost:5000/delete/${id}`);
@@ -66,8 +65,6 @@ function ActionList() {
     };
   
   
-
-
   const [open, setOpen] = useState(false);
   const [preFill, setPreFill] = useState(null);
   const handleOpen = (post) => {
@@ -92,10 +89,27 @@ function ActionList() {
     fetchData();
   }, []);
 
-  
-  return (
-      <>
-           <div>
+  const [state, setState] = React.useState({
+    right: false,
+  });
+
+  const toggleDrawer = (anchor, open) => (event) => {
+    if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
+      return;
+    }
+
+    setState({ ...state, [anchor]: open });
+  };
+
+  const list = (anchor) => (
+    <Box
+      sx={{ width: anchor === 'top' || anchor === 'bottom' ? 'auto' : 250 }}
+      role="presentation"
+      onClick={toggleDrawer(anchor, false)}
+      onKeyDown={toggleDrawer(anchor, false)}
+    >
+      <List>
+      <div>
            {posts.map((post) => (
   <List sx={style1} component="nav" aria-label="mailbox folders" key={post.id} className='bill-list'>
     <ListItem button>
@@ -115,10 +129,7 @@ function ActionList() {
     <ListItem button>
       <p>Date: {post.actionDate}</p>
     </ListItem>
-               <motion.div className='button-icon'   whileHover={{
-        scale: 1.2,
-        transition: { yoyo: Infinity },
-    }}>
+               <motion.div className='button-icon'>
                <EditIcon variant="contained" type="button" onClick={() => handleOpen(post)} />
     <DeleteIcon variant="contained" type="button" onClick={() => removeAction(post.id)} />
     </motion.div>
@@ -126,6 +137,30 @@ function ActionList() {
 ))}
 
       </div>
+      </List>
+      <Divider />
+    </Box>
+  );
+  return (
+      <>
+{['right'].map((anchor) => (
+        <React.Fragment key={anchor}>
+<Button
+  onClick={toggleDrawer('right', true)}
+  variant="contained" color="success"
+  style={{ marginTop: '100px'}}
+>
+  Receipt Box! CLICK HERE
+</Button>
+          <Drawer
+         anchor='right'
+         open={state['right']}
+         onClose={toggleDrawer('right', false)}
+       >
+         {list('right')}
+          </Drawer>
+        </React.Fragment>
+      ))}
       <Modal
       open={open}
       onClose={handleClose}
@@ -169,7 +204,6 @@ export default ActionList;
 
 
 
-
 // {posts.map((post) => (
 //   <div key={post.id} className="card">
 //     <div className="card-content">
@@ -184,3 +218,35 @@ export default ActionList;
 //     </div>
 //   </div>
 // ))}
+
+// <div>
+// {posts.map((post) => (
+// <List sx={style1} component="nav" aria-label="mailbox folders" key={post.id} className='bill-list'>
+// <ListItem button>
+// {/* <h3 className="card-title">Action: {post.action}</h3> */}
+// </ListItem>
+// <Divider />
+// <ListItem button divider>
+// <p>Month: {post.month}</p>
+// </ListItem>
+// <ListItem button>
+// <p>Electricity Bill: {post.electricity}</p>
+// </ListItem>
+// <Divider light />
+// <ListItem button>
+// <p>Water Bill: {post.water}</p>
+// </ListItem>
+// <ListItem button>
+// <p>Date: {post.actionDate}</p>
+// </ListItem>
+//     <motion.div className='button-icon'   whileHover={{
+// scale: 1.2,
+// transition: { yoyo: Infinity },
+// }}>
+//     <EditIcon variant="contained" type="button" onClick={() => handleOpen(post)} />
+// <DeleteIcon variant="contained" type="button" onClick={() => removeAction(post.id)} />
+// </motion.div>
+// </List>
+// ))}
+
+// </div>

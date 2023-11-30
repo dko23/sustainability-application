@@ -18,9 +18,7 @@ function App() {
           <Route path="AboutUs" element={<AboutUs />} />
             <Route path="Dash" element={<Dash/>} />
           </Routes>
-        <hr></hr>
         <Footer />
-        <hr></hr>
       </AppRouter>
     
     </div>
