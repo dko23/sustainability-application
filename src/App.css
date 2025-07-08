@@ -1,12 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
-
-
-
 
 .App {
   text-align: center;
-  font-family: 'Roboto', sans-serif;
-
+ 
 }
 
 .App-logo {
@@ -107,7 +102,6 @@ font-size: larger;
 
 
 
-
 .jumbotron{
   background: url(images/green-hand.jpg);
   background-size:cover;
@@ -151,11 +145,9 @@ font-size: larger;
 }
 
 .energy-management{
-  text-align: left;
-  word-spacing: 5px;
-  margin-top: 10px;
-  margin-bottom: 15px;
-  line-height: 2.0;
+  word-spacing: 2px;
+  line-height: 1.6;
+  margin: 10px 0 15px 0; 
 }
  
 .dash{
@@ -227,11 +219,13 @@ font-size: larger;
 
 .testimonial-student{
   margin-bottom: 200px;
+  background: linear-gradient(to top left, #f2f2f2 50%, white 50%);
+ 
 }
 
 .student{
-  border-top-left-radius: 200px;
-  border-bottom-right-radius: 200px;
+  border-radius: 100px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
 .track-bill{
@@ -246,11 +240,11 @@ border-radius: 30px;
 
 .mission{
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-  border-top-right-radius: 200px;
-  border-bottom-left-radius: 200px;
+  border-radius: 100px;
   }
 .mission-statement{
    margin-bottom: 200px;
+   background: linear-gradient(to top right, #f2f2f2 50%, white 50%);
 }
 
 .usage{
@@ -261,6 +255,7 @@ border-radius: 30px;
   display: flex;
   justify-content: space-between;
   margin-bottom: 200px;
+  
 }
 .sustania-logos{
   margin-left: 200px;
@@ -276,9 +271,7 @@ border-radius: 30px;
   justify-content: space-between;
 } */
 
-.big-companies{
-  height: 300px;
-}
+
 .edf-logo{
   height: 100px;
   width: 80px;
@@ -286,10 +279,12 @@ border-radius: 30px;
 .water-logo{
   height: 100px;
   width: 100px;
+  
 }
 .british-logo{
   height: 70px;
   width: 100px;
+ 
 }
 .view {
   background-image: url('../src/images/blob.svg');
@@ -303,3 +298,4 @@ border-radius: 30px;
   justify-content: center;
   align-items: center;
 }
+

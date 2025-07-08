@@ -1,0 +1,33 @@
+name: Next static site Build 
+
+on:
+  push:
+    branches: main
+  # pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+    contents: write 
+    issues: write 
+    pull-requests: write 
+
+    steps:
+      - name: Checkout repository 
+        uses: actions/checkout@v3
+
+      - name: Install Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "lts/*"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build Static Files
+        run:  npm run build
+           env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        
+## steps are dependent on each so where the step is placed is important in regards to execution

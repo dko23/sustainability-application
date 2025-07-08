@@ -14,7 +14,7 @@ function Footer() {
           <div className="sustania-logos">
             <ul className='foot'>
             <li style={{  marginBottom:'30px',  fontSize:'39px'}}>Sustania</li>
-              <li style={{  marginBottom:'30px'}}><p className="text-center">&copy; 2023 Sustania ||| (GH) Ltd. All Rights Reserved.</p></li>
+              <li style={{  marginBottom:'30px'}}><p className="text-center">&copy; 2025 Sustania ||| (GH) Ltd. All Rights Reserved.</p></li>
             </ul>
             <div className='brands'>
                   <div className='tech-brands' style={{  marginBottom:'20px'}}><FontAwesomeIcon icon="fa-brands fa-x-twitter" size="2x"/></div>

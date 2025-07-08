@@ -42,7 +42,7 @@ function AboutUs() {
         <div className="row testimonial-student">
           <div className="col-md-6 student-pic ">
             <blockquote>
-              <h4 className='energy-management'>"I've been using Sustania for the past six months, and it has completely transformed the way I manage my utility bills. Before, keeping track of multiple bills and due dates was a constant hassle. With Sustania, everything is centralized and effortlessly organized."</h4>
+              <h5 className='energy-management'>"I've been using Sustania for the past six months, and it has completely transformed the way I manage my utility bills. Before, keeping track of multiple bills and due dates was a constant hassle. With Sustania, everything is centralized and effortlessly organized."</h5>
               <footer><strong> Ama,</strong>University of Ghana Student</footer>
             </blockquote>
           </div>
@@ -51,22 +51,22 @@ function AboutUs() {
             <img src={student} alt="Picture 1" className="img-fluid pic student" />
           </motion.div>
         </div>
-        <div className='row big-companies'>
+        <div className="row">
           <h3 className='sustania-icons' style={{ marginBottom: '50px' }}>The world's best product teams trust Sustania to deliver an unrivaled experience for both developers and users.</h3>
           <div className="col-md-12 energy-stuff">
-            <div className="card" style={{ width: '18rem', border: 'none' }}>
+            <div className="card" style={{border: 'none'}}>
               <img src={electric} className='company-logo' />
             </div>
-            <div className="card" style={{ width: '18rem', border: 'none' }}>
+            <div className="card" style={{border: 'none'}} >
               <img src={GWC} className='company-logo' />
             </div>
-            <div className="card" style={{ width: '18rem', border: 'none' }}>
+            <div className="card" style={{border: 'none'}}>
               <img src={edf} className='edf-logo' />
             </div>
-            <div className="card" style={{ width: '18rem', border: 'none' }}>
+            <div className="card" style={{border: 'none'}}>
               <img src={water} className='water-logo' />
             </div>
-            <div className="card" style={{ width: '18rem', border: 'none' }}>
+            <div className="card" style={{border: 'none'}}>
               <img src={british} className='british-logo' />
             </div>
           </div>
@@ -75,7 +75,7 @@ function AboutUs() {
           <h3 className='sustania-icons' style={{ marginBottom: '50px' }}>Utility bill management Made Easy! Follow the steps below to get started</h3>
           <div className="col-md-12 guide">
             <div className="card view" style={{ width: '18rem', border: 'none', marginRight: '550px' }}>
-              <div className='tech-brands'><FontAwesomeIcon icon={fa1} beat style={{ color: "#013b30", }} size="6x" />
+              <div className='tech-brands'><FontAwesomeIcon icon={fa1} size="6x" />
               </div>
               <div className="card-body">
                 <h3 class="card-title">Move to DashBoard in the Navbar</h3>
@@ -85,19 +85,19 @@ function AboutUs() {
               </div>
 
             </div>
-            <div className="card view" style={{ width: '18rem', border: 'none', marginLeft: '550px' }}>
+            <div className="card view" style={{ width: '25rem', border: 'none', marginLeft: '550px' }}>
               <div className='tech-brands'>
                 <div className='tech-brands'><FontAwesomeIcon icon={fa2} beat style={{ color: "#013b30", }} size="6x" />
               </div>
               </div>
               <div className="card-body">
               <h3 class="card-title"> Add a New Utility Bill</h3>
-<p className="card-text" style={{   fontWeight: 'bold', fontSize:'large'}}>
+<p className="card-text" style={{ fontWeight: 'bold', fontSize:'large'}}>
 Click on the "Add Bill" or "New Entry" button to input a new utility bill.
 Select the utility type (e.g., electricity, water) and enter the bill amount.Optionally, input additional details such as the billing period or any notes related to the bill.</p>
               </div>
             </div>
-            <div className="card view" style={{ width: '18rem', border: 'none', marginRight: '350px' }}>
+            <div className="card view" style={{ width: '25rem', border: 'none', marginRight: '350px' }}>
               <div className='tech-brands'><div className='tech-brands'><FontAwesomeIcon icon={fa3} beat style={{ color: "#013b30", }} size="6x" />
               </div>
               </div>
