@@ -12,12 +12,10 @@ The Utility Bill Manager is a MERN (MongoDB, Express.js, React, Node.js) stack p
 - Frontend: React, Recharts
 - Backend: Node.js, Express.js, MongoDB, Mongoose
 
-## get started
+## get started; reminder to self 
 # Due to the Data being stored in MongoDB Atlas and to use the app to the fullest, we have to do the following; 
 
-1. Clone the repository:
-   git clone https://github.com/your-username/sustainability-app.git
-
+1. Clone the repository
 2. cd backend
 3. cd server.js
 4. nodemon server.js
